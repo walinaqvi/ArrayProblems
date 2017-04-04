@@ -44,6 +44,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+/**
+ Mathod to print elements which are duplicate or repeated
+
+ @param array array with duplicate elements
+ */
 - (void)printRepeatingElemntAndTimesInArray:(NSArray*)array
 {
     NSMutableDictionary *arrayTempDictionary = [NSMutableDictionary new];
@@ -57,6 +63,12 @@
     }
 }
 
+/**
+ Mathod to print missing number from a series
+
+ @param numbersArray array with all elements
+ @param range range of series
+ */
 -(void)printMissingNumberFromArray:(NSArray*)numbersArray andRangeOfNumbers:(int)range
 {
     int expectedSumOfRange = range*(range+1)/2;
@@ -68,6 +80,11 @@
     NSLog(@"Missing Number is:%d",diffrence);
 }
 
+/**
+ Mathod to print largest,second largest,smallest,second smallest number from a array
+
+ @param numbersArray array with numbers
+ */
 -(void)printLargetsAndSmallestFromArray:(NSArray*)numbersArray
 {
     int largest = 0;
@@ -91,7 +108,15 @@
     
 }
 
-//Concept https://www.youtube.com/watch?v=MZaf_9IZCrc
+
+/**
+ mathod to sort a array in ascending order using quick sort
+ Concept: https://www.youtube.com/watch?v=MZaf_9IZCrc
+
+ @param unsortedArray array which is not sorted
+ @param startPoint start point of array(left)
+ @param endPoint end point of array(right)
+ */
 - (void)quickSortTheArray:(NSMutableArray*)unsortedArray startPoint:(int)startPoint EndPoint:(int)endPoint
 {
     NSDate *methodStartTime = [NSDate date];
@@ -136,7 +161,14 @@
     
 }
 
-//Concept https://www.youtube.com/watch?v=6Gv8vg0kcHc
+
+
+/**
+ mathod to sort a array in ascending order using Bubble sort
+ Concept: https://www.youtube.com/watch?v=6Gv8vg0kcHc
+
+ @param unsortArray array with unsorted elements
+ */
 - (void)bubbleSortTheArray:(NSMutableArray*)unsortArray
 {
     NSDate *methodStartTime = [NSDate date];
@@ -165,6 +197,14 @@
     NSLog(@"executionTime Bubble Sort = %f", executionTime);
 
 }
+
+/**
+ mathod to swap elements
+
+ @param unsortArray array in which we need to swap values
+ @param indexFirst First values index
+ @param secondIndex Second values Index
+ */
 - (void)swapElementsOfArray:(NSMutableArray*)unsortArray withFirstIndex:(int)indexFirst andSecondIndex:(int)secondIndex
 {
     NSNumber *tepm = [unsortArray objectAtIndex:indexFirst];
@@ -173,6 +213,12 @@
     
     
 }
+
+/**
+ Mathod to print sorted
+
+ @param sortedArray array with sorted elements
+ */
 -(void)printSortedArray:(NSArray*)sortedArray
 {
     NSString *sortedValues = @"";
